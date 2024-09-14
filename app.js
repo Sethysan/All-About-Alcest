@@ -1,8 +1,8 @@
-// Fetch data from the server
+// Fetch updated data from the server for the chart
 fetch('/location-data')
   .then(response => response.json())
   .then(mockData => {
-    // Extract labels and data for the chart
+    // Extract labels (cities) and data (counts)
     const labels = mockData.map(entry => entry.city);
     const data = mockData.map(entry => entry.count);
 

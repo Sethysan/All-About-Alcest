@@ -55,8 +55,12 @@ This project is a fan page dedicated to the French band **Alcest**, known for th
     node server.js
 
 5. Open your browser and go to:
+
+     http://localhost:8080 to view the fan page.
     
-     http://localhost:3000 to view the fan page.
+     Ctrl+Shift+B  to quickly open http://localhost:8080 
+     
+     "Vs Live Server does not work with express server"
 
 
 Contributing
