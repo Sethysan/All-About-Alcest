@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailing List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/cecff0a1b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Thanks for helping the cause!</h1>
+
+            <nav class="level">
+                <blockquote class="level-item has-text-centered">
+                    <a href="/" class="button is-link">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                        </span>
+                        <span>Back to All About Alcest</span>
+                    </a>
+                </blockquote>
+            </nav>
+
+            <form method="post" action="http://localhost:8080/new-reservation" class="box" style="background-color: rgba(125, 122, 122, 0.7); padding: 20px; border-radius: 10px; box-shadow: 0 4px 20px rgba(57, 98, 173, 0.1);">
+                <h3 class="subtitle">Tell us about yourself</h3>
+
+                <!-- Name -->
+                <div class="field">
+                    <label class="label" for="concertRequest">Name:</label>
+                    <div class="control has-icons-left">
+                        <input id="concertRequest" name="concertRequest" class="input" type="text" placeholder="Your name" required autofocus />
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- City and State -->
+                <div class="field">
+                    <label class="label" for="cityAndState">City and State:</label>
+                    <div class="control has-icons-left">
+                        <input id="cityAndState" name="cityAndState" class="input" type="text" placeholder="Your city and state" required />
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="field">
+                    <label class="label" for="email">Email:</label>
+                    <div class="control has-icons-left">
+                        <input id="email" name="Email" class="input" type="email" placeholder="Your email" required />
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Date of Birth -->
+                <div class="field">
+                    <label class="label" for="date-of-birth">Full Date of Birth:</label>
+                    <div class="control has-icons-left">
+                        <input id="date-of-birth" name="date-of-birth" class="input" type="date" />
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-calendar-alt"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Favorite Color -->
+                <div class="field">
+                    <label class="label" for="favorite-color">Your Favorite Color:</label>
+                    <div class="control has-icons-left">
+                        <input id="favorite-color" name="favorite-color" class="input" type="color" />
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-palette"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Lucky Number -->
+                <div class="field">
+                    <label class="label" for="lucky-number">Your Lucky Number:</label>
+                    <div class="control has-icons-left">
+                        <input id="lucky-number" name="lucky-number" class="input" type="number" />
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-dice"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Confirmation Checkbox -->
+                <div class="field">
+                    <label class="checkbox">
+                        <input type="checkbox" id="confirmation" name="confirmation">
+                        I confirm the information provided is accurate.
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="field">
+                    <div class="control">
+                        <button type="submit" class="button is-success">
+                            <span class="icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </span>
+                            <span>Submit</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
