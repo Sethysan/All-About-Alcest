@@ -1,7 +1,4 @@
 {
-    // Ctrl+Shift+B (default for "Build") to quickly open http://localhost:8080 
-    // in your default browser without using Live Server.
-
     "version": "2.0.0",
     "tasks": [
       {
@@ -11,6 +8,12 @@
         "group": {
           "kind": "build",
           "isDefault": true
+        },
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared"
         },
         "problemMatcher": []
       }

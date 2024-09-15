@@ -1,0 +1,389 @@
+body {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    background-image: url("img/Neige_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(192,192,192,0.5);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(107, 107, 34);
+}
+
+h2 {
+    color: rgb(107, 107, 34);
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.25rem;
+    color: rgb(130, 140, 148);
+    padding: 0 15px;
+    background-color: rgba(7, 4, 4, 0.6); /* 60% opacity */
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+header {
+    position: relative;
+    padding: 20px;
+}
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 100%;
+    max-width: 350px;
+}
+.logo {
+    position: relative;
+    display: inline-block;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for links */
+
+.youtube-link:hover {
+    color: #df0a0a; /* Lighter red when hovering over YouTube links */
+    transform: scale(1.1); /* Slight zoom effect */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.youtube-link {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-bottom: 5px;
+    background-color: #000000;
+    color: rgb(89, 193, 158);
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.6s, color .3s;
+}
+.center-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+               /* Full viewport height */
+    margin: 0;               /* Remove margin */
+  }
+.middle-link{
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: #000000;
+    color: rgb(89, 193, 158);
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.6s, color .3s;
+}
+
+.middle-link:hover {
+    color: #5e1c33; /* Lighter red when hovering over YouTube links */
+    transform: scale(1.1); /* Slight zoom effect */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Modal container - hidden by default */
+/* Modal background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with transparency */
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background: radial-gradient(circle, rgba(61, 201, 164, 0.648) 50%, rgb(92, 133, 120) 100%);
+    padding: 20px;
+    border-radius: 20px;
+    width: 400px;
+    max-width: 90%; /* Responsive width */
+    margin: 15% auto; /* Center vertically and horizontally */
+    position: relative;
+  }
+  
+  /* Close button */
+  .close-btn {
+    color: white;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  /* Modal header styling */
+  .modal-header {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Form layout */
+  #concertForm {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center align the form elements */
+    position: relative;
+  }
+  
+  /* Style the labels and select elements */
+  #concertForm label {
+    font-size: 1em;
+    color: #3f3c3c; /* Dark silver */
+    font-weight: bolder;
+    margin-bottom: 5px; /* Space between label and dropdown */
+    display: block; /* Ensure label appears above */
+  }
+  
+  #concertForm select {
+    font-size: 1em;
+    padding: 5px;
+    margin-bottom: 20px; /* Space between dropdowns */
+    width: 100%; /* Full width */
+    max-width: 180px; /* Optional: limit width */
+    box-sizing: border-box;
+  }
+  
+  /* State dropdown positioned at the bottom left */
+  #state {
+    width: 100%;
+    margin-right: 10px;
+  }
+  
+  /* City dropdown positioned at the bottom right */
+  #city {
+    width: 100%;
+    margin-right: 10px;
+  }
+  
+  /* Submit button centered at the bottom */
+  #concertForm button {
+    margin-top: 20px; /* Space above the button */
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #concertForm button:hover {
+    background-color: #333;
+  }
+
+
+/* Ensuring the section scales */
+#facts-section, #links-section, #quotes-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.album-hover-text  {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white;
+    font-size: .82rem;
+    text-align: center;
+    padding: 10px;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Hide the text */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    border-radius: 0 0 5px 5px; /* Match the image border-radius */
+}
+
+.logo-hover-text{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white;
+    font-size: .82rem;
+    text-align: center;
+    padding: 10px;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Hide the text */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    border-radius: 0 0 5px 5px; /* Match the image border-radius */
+}
+
+/* Show the text on hover */
+.album:hover .album-hover-text{
+    opacity: 1;
+    visibility: visible;
+}
+.logo:hover .logo-hover-text{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Table styling */
+#facts-section table {
+    width: 100%;
+    background-color: rgb(89, 193, 158);
+}
+
+th, td {
+    border: 1px solid #504444;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #504444;
+}
+
+/* Grid layout for images */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.album,.logo {
+    position: relative;
+    display: inline-block;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+/* Blockquote styling */
+blockquote {
+    text-align: center;
+    font-style: italic;
+    margin: 20px auto;
+    line-height: 2.0;
+    color: rgb(130, 140, 148);
+}
+
+a.button.is-link{
+    display: inline-block;
+    padding: 8px 16px;
+    margin-bottom: 5px;
+    background-color: #000000;
+    color: rgb(89, 193, 158);
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.6s, color .3s;
+}
+a.button.is-link:hover{
+    color: #5e1c33; /* Lighter red when hovering over YouTube links */
+    transform: scale(1.1); /* Slight zoom effect */
+    text-decoration: underline; /* Underline on hover */
+}
+button.button.is-success{
+    background-color: rgb(89, 193, 158);
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .top-right {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 567px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+
+    .top-right {
+        display: none;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center horizontally */
+        justify-content:flex-start; /* Start at top of page */
+        height: auto; /* Make the header take full viewport height */
+        text-align: center; /* Center text for good measure */
+    }
+
+    /* Middle link centering */
+    .middle-link {
+        margin-top: 20px; /* Add some space below the logo */
+    }
+
+    /* Optional: Center the logo image if necessary */
+    header img {
+        max-width: 100%; /* Ensure the logo is responsive */
+        height: auto;
+    }
+    
+}
+
