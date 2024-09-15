@@ -52,7 +52,7 @@ Welcome to the **Alcest Fan Community**, a space dedicated to fans of the French
     cd server/
     ```
     node server.js
-    ```
+    
 5. Open your browser and go to `http://localhost:8080` to view the fan page.
 
     If using VS Code, use **Ctrl+Shift+B** to quickly open the page.
