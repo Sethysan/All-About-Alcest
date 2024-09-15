@@ -1,75 +1,74 @@
 # Alcest Fan Page Project
 
-This project is a fan page dedicated to the French band **Alcest**, known for their unique blend of shoegaze, black metal, and post-rock. The mission of this fan page is to provide fans with easy access to music, detailed information about the band, and a way to interact with the community by pinning their locations on a shared map.
+Welcome to the **Alcest Fan Community**, a space dedicated to fans of the French band **Alcest**, known for their pioneering blend of shoegaze, black metal, and post-rock. This project not only provides fans with easy access to music and band information but also creates an interactive experience where fans can engage by submitting their locations to help bring Alcest to their city.
 
 ## Mission
 
-- **Music Links**: Provide fans with links to Alcest's music across various platforms.
-- **Band Information**: Offer detailed information about Alcest’s history, discography, and more.
-- **User Interaction**: Allow fans to submit their location, which is then pinned to a map to show where other fans are located worldwide.
+- **Music Links**: Explore links to Alcest's albums on YouTube and album pages on Wikipedia.
+- **Band Information**: Discover Alcest’s journey, including their history, discography, and band members.
+- **Fan Interaction**: Submit your location to a shared map that highlights the global fan base and supports the movement to bring Alcest to a city near you.
 
 ## Features
 
-- **Band Info**: Introduction and history of Alcest, including key milestones and album releases.
-- **Discography**: A detailed list of Alcest's albums and their release dates.
-- **Facts Section**: A table of interesting facts about the band, styled with CSS.
-- **Fan Form**: An interactive form for users to submit their thoughts, feedback, or questions about the band.
-- **Location Pinning**: Users can submit their location via the form, which is then added to a shared map to highlight the global Alcest fan base.
-- **Responsive Design**: The page is designed to be responsive across different screen sizes.
+- **Brief History**: Learn about Alcest's evolution from black metal roots to their signature "blackgaze" sound.
+- **Discography Section**: Browse through Alcest’s albums, complete with images and links to music and more information.
+- **Band Members**: A table showcasing the members of the band and their roles.
+- **Fan Location Submission**: Fans can fill out a form to pin their location on an interactive map, supporting Alcest’s potential tour planning.
+- **Responsive Design**: Designed using Bulma for responsiveness across all devices.
+- **Quotes Section**: Inspirational quotes from Alcest’s music displayed prominently.
 
 ## Technologies Used
 
 - **HTML**: Structure of the web page.
-- **CSS**: Styling the layout and design (including using the Bulma framework for styling).
-- **JavaScript**: Handling form validation, map integration, and other interactive elements.
-- **Node.js**: Backend server for processing form submissions and handling user data.
-- **Font Awesome**: Icons used for enhancing the design of the page.
-- **Bulma**: A modern CSS framework for creating a responsive and mobile-first design.
-- **Google Maps API**: Used to plot user-submitted locations on an interactive map.
-
+- **CSS**: Styling with Bulma framework and custom styles.
+- **JavaScript**: Interactive elements like the form, map, and dynamic content.
+- **Node.js**: Backend server for processing form submissions and handling location data.
+- **Chart.js**: Displaying fan locations on a graph.
+- **Font Awesome**: Icons to enhance the visual appeal of the page.
 
 ## Setup and Installation
 
 ### Prerequisites
 
-- **Node.js**: Make sure you have Node.js installed on your machine.
-- **Git**: For version control.
+- **Node.js**: Ensure Node.js is installed on your system.
+- **Git**: Version control tool.
 
 ### Steps to Run Locally
 
 1. Clone the repository:
-   ```bash
-
+    ```bash
     git clone https://github.com/Sethysan/Alcest-Fan-Page-Project.git
-
+    ```
 2. Navigate to the project directory:
-
+    ```bash
     cd Alcest-Fan-Page-Project
-
+    ```
 3. Install dependencies:
-
+    ```bash
     npm install
-
+    ```
 4. Start the server:
-
+    ```bash
+    cd server/
+    ```
     node server.js
+    ```
+5. Open your browser and go to `http://localhost:8080` to view the fan page.
 
-5. Open your browser and go to:
+    If using VS Code, use **Ctrl+Shift+B** to quickly open the page.
 
-     http://localhost:8080 to view the fan page.
-    
-     Ctrl+Shift+B  to quickly open http://localhost:8080 
-     
-     "Vs Live Server does not work with express server"
+    Note: VS Live Server does not work with the Express server.
 
+## Contributing
 
-Contributing
 If you'd like to contribute to the project, feel free to open an issue or submit a pull request on GitHub.
 
-License
+## License
+
 This project is licensed under the MIT License.
 
-Contact
+## Contact
+
 For any questions or feedback, feel free to contact me at rakichseth@gmail.com.
 
-This project was built as part of a coding exercise and as a tribute to Alcest's unique musical journey.# All-About-Alcest
+This project was built as part of a coding exercise and as a tribute to Alcest's unique musical journey.
