@@ -50,7 +50,7 @@ Welcome to the **Alcest Fan Community**, a space dedicated to fans of the French
 4. Start the server:
     ```bash
     cd server/
-    ```
+    ```bash
     node server.js
     ```
     
